@@ -71,6 +71,16 @@
     font-size: 14px;
     color: var(--texto-secundario);
     margin-bottom: 12px;
+    min-height: 105px;
+}
+
+/* Precio - segundo card-title */
+#proveedores .card-title:nth-of-type(2) {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 #proveedores .calificacion {
@@ -141,6 +151,12 @@
     #proveedores .card-text {
         font-size: 15px;
         margin-bottom: 15px;
+        min-height: 115px;
+    }
+    
+    #proveedores .card-title:nth-of-type(2) {
+        font-size: 24px;
+        margin-top: 12px;
     }
     
     #proveedores .calificacion {
@@ -180,6 +196,11 @@
     
     #proveedores .card-text {
         font-size: 14px;
+        min-height: 100px;
+    }
+    
+    #proveedores .card-title:nth-of-type(2) {
+        font-size: 23px;
     }
 }
 
@@ -224,6 +245,12 @@
         font-size: 13px;
         margin-bottom: 10px;
         line-height: 1.4;
+        min-height: 95px;
+    }
+    
+    #proveedores .card-title:nth-of-type(2) {
+        font-size: 20px;
+        margin-top: 8px;
     }
     
     #proveedores .calificacion {
