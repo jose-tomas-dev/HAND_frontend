@@ -201,4 +201,43 @@
     #proveedores {
         margin-bottom: 40px;
     }
+    
+    #proveedores .card {
+        min-height: 360px;
+    }
+    
+    #proveedores .card-img-top {
+        height: 160px;
+    }
+    
+    #proveedores .card-body {
+        padding: 12px;
+        height: calc(100% - 160px);
+    }
+    
+    #proveedores .card-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    
+    #proveedores .card-text {
+        font-size: 13px;
+        margin-bottom: 10px;
+        line-height: 1.4;
+    }
+    
+    #proveedores .calificacion {
+        bottom: 12px;
+        left: 12px;
+        right: 12px;
+    }
+    
+    #proveedores .calificacion span:first-child {
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+    
+    #proveedores .puntuacion {
+        font-size: 15px;
+    }
 }
