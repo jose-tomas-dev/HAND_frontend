@@ -31,7 +31,7 @@
     height: 100%;
 }
 
-/* Estilos para las cards */
+/* Estilos BASE para móvil (col-6 - 2 columnas) */
 #proveedores .card {
     background: var(--fondo-blanco);
     border: 2px solid #DEE2E6;
@@ -39,7 +39,7 @@
     height: 100%;
     margin-bottom: 20px;
     overflow: hidden;
-    min-height: 450px;
+    min-height: 380px;
     position: relative;
 }
 
@@ -49,39 +49,47 @@
 
 #proveedores .card-img-top {
     width: 100%;
-    height: 250px;
+    height: 180px;
     object-fit: cover;
-    object-position: center;
+    object-position: center top;
 }
 
 #proveedores .card-body {
-    padding: 20px;
+    padding: 15px;
     position: relative;
-    height: calc(100% - 250px);
+    height: calc(100% - 180px);
 }
 
 #proveedores .card-title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--texto-primario);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 #proveedores .card-text {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--texto-secundario);
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 
 #proveedores .calificacion {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+}
+
+#proveedores .calificacion span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: inherit;
 }
 
 #proveedores .calificacion span:first-child {
-    font-size: 16px;
+    font-size: 13px;
+    letter-spacing: -1px;
 }
 
 #proveedores .puntuacion {
@@ -91,8 +99,92 @@
     margin-left: 10px;
 }
 
-/* Responsive para móviles */
-@media (max-width: 768px) {
+/* Para desktop (col-md-3 - 4 columnas) */
+@media (min-width: 769px) {
+    #texto {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    #texto h2 {
+        font-size: 36px;
+    }
+    
+    #texto p {
+        font-size: 18px;
+    }
+    
+    #proveedores {
+        margin-bottom: 60px;
+    }
+    
+    #proveedores .card {
+        min-height: 450px;
+    }
+    
+    #proveedores .card-img-top {
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    #proveedores .card-body {
+        padding: 20px;
+        height: calc(100% - 250px);
+    }
+    
+    #proveedores .card-title {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    
+    #proveedores .card-text {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    
+    #proveedores .calificacion {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
+    
+    #proveedores .calificacion span:first-child {
+        font-size: 14px;
+        letter-spacing: -0.5px;
+    }
+    
+    #proveedores .puntuacion {
+        font-size: 17px;
+    }
+}
+
+/* Ajuste específico para tablets en modo retrato */
+@media (min-width: 577px) and (max-width: 768px) {
+    #proveedores .card {
+        min-height: 400px;
+    }
+    
+    #proveedores .card-img-top {
+        height: 200px;
+    }
+    
+    #proveedores .card-body {
+        padding: 18px;
+        height: calc(100% - 200px);
+    }
+    
+    #proveedores .card-title {
+        font-size: 19px;
+    }
+    
+    #proveedores .card-text {
+        font-size: 14px;
+    }
+}
+
+/* Para móviles muy pequeños */
+@media (max-width: 576px) {
     #texto {
         padding-top: 40px;
         padding-bottom: 30px;
@@ -108,36 +200,5 @@
     
     #proveedores {
         margin-bottom: 40px;
-    }
-    
-    #proveedores .card {
-        min-height: 380px;
-    }
-    
-    #proveedores .card-img-top {
-        height: 180px;
-        object-fit: cover;
-        object-position: center top;
-    }
-    
-    #proveedores .card-body {
-        padding: 15px;
-        height: calc(100% - 180px);
-    }
-    
-    #proveedores .card-title {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
-    
-    #proveedores .card-text {
-        font-size: 14px;
-        margin-bottom: 12px;
-    }
-    
-    #proveedores .calificacion {
-        bottom: 15px;
-        left: 15px;
-        right: 15px;
     }
 }
