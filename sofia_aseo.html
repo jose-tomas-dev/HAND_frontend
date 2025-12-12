@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./z_style.css">
+    <link rel="stylesheet" href="./z_proveedor.css">
+    <link href="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/src/notiflix.min.css" rel="stylesheet">
+    <title>HAND | Aseo | Sofia</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                Hand
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">
+                            Inicio <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Acerca de nosotros
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./mision.html">Misión</a>
+                            <a class="dropdown-item" href="./vision.html">Visión</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./contactenos.html">Contactenos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Servicios
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./jardineria.html">Jardinería</a>
+                            <a class="dropdown-item" href="./aseo.html">Aseo</a>
+                            <a class="dropdown-item" href="./plomeria.html">Plomería</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciosesion.html">Inicia sesión</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrate.html">Registrate</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <div class="container" id="detalle-proveedor">
+
+        
+        <div class="row" id="info-principal">
+            <div class="col-12 col-md-4" id="foto-proveedor">
+                <img src="./assets/aseo2.avif" class="img-proveedor">
+            </div>
+
+            <div class="col-12 col-md-8" id="datos-proveedor">
+                <h1 class="nombre-proveedor">Sofía García</h1>
+                <div class="calificacion-principal">
+                    <span class="estrellas">⭐⭐⭐⭐⭐</span>
+                    <span class="puntuacion">4.7</span>
+                    <span class="total-resenas">(141 reseñas)</span>
+                </div>
+
+                <div class="precio-contenedor">
+                    <span class="precio">$35.000 COP</span>
+                    <span class="por-hora">/ por hora</span>
+                </div>
+
+                <button class="btn-reservar" onclick="reservarCita()">Reserva Ya</button>
+
+                <div class="especialidad">
+                    <strong>Especialidad:</strong> Organización de espacios y limpieza de hogares
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row" id="descripcion-completa">
+            <div class="col-12">
+                <h2 class="titulo-seccion">Acerca de Sofia</h2>
+                <p class="texto-descripcion">
+                    Sofía García tiene 8 años de experiencia en limpieza y organización profesional de espacios residenciales. Su talento especial está en transformar hogares caóticos en espacios ordenados, funcionales y hermosos. Combina sus servicios de limpieza con técnicas de organización que ayudan a sus clientes a mantener el orden a largo plazo.
+                </p>
+                <p class="texto-descripcion">
+                    Sofía cree que un hogar limpio y organizado mejora la calidad de vida de las personas. Por eso, no solo limpia sino que también enseña a sus clientes sistemas prácticos de organización adaptados a sus necesidades. Su enfoque amigable y su capacidad para entender las necesidades específicas de cada familia la hacen única en su campo.
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="row" id="servicios-ofrecidos">
+            <div class="col-12">
+                <h2 class="titulo-seccion">Servicios que ofrece</h2>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="lista-servicios">
+                    <li>✓ Limpieza general de hogares</li>
+                    <li>✓ Organización de closets y armarios</li>
+                    <li>✓ Organización de cocinas y despensas</li>
+                    <li>✓ Sistemas de almacenamiento</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6">
+                <ul class="lista-servicios">
+                    <li>✓ Limpieza y orden de habitaciones</li>
+                    <li>✓ Organización de espacios pequeños</li>
+                    <li>✓ Decluttering (eliminación de desorden)</li>
+                    <li>✓ Mantenimiento de organización</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="row" id="comentarios-usuarios">
+            <div class="col-12">
+                <h2 class="titulo-seccion">Comentarios de clientes</h2>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="comentario-card">
+                    <div class="comentario-header">
+                        <div class="usuario-info">
+                            <strong class="nombre-usuario">María González</strong>
+                            <span class="fecha-comentario">Hace 2 semanas</span>
+                        </div>
+                        <div class="calificacion-comentario">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <p class="texto-comentario">
+                        Sofía no solo limpió mi casa, ¡la transformó! Organizó mi closet y mi cocina de una manera increíble. Ahora encuentro todo fácilmente. Es una genia de la organización.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="comentario-card">
+                    <div class="comentario-header">
+                        <div class="usuario-info">
+                            <strong class="nombre-usuario">Carlos Rodríguez</strong>
+                            <span class="fecha-comentario">Hace 1 mes</span>
+                        </div>
+                        <div class="calificacion-comentario">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <p class="texto-comentario">
+                        Buen servicio. Sofía es muy organizada y creativa. Mi apartamento quedó limpio y ordenado. A veces se toma su tiempo, pero el resultado vale la pena.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="comentario-card">
+                    <div class="comentario-header">
+                        <div class="usuario-info">
+                            <strong class="nombre-usuario">Ana Martínez</strong>
+                            <span class="fecha-comentario">Hace 1 mes</span>
+                        </div>
+                        <div class="calificacion-comentario">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <p class="texto-comentario">
+                        Sofía es maravillosa. Tiene un don para organizar espacios. Mi casa nunca había estado tan ordenada. Además es súper amable y profesional. La recomiendo al 100%
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="comentario-card">
+                    <div class="comentario-header">
+                        <div class="usuario-info">
+                            <strong class="nombre-usuario">Luis Fernández</strong>
+                            <span class="fecha-comentario">Hace 2 meses</span>
+                        </div>
+                        <div class="calificacion-comentario">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                    <p class="texto-comentario">
+                        Excelente profesional. Sofía organizó toda mi casa y me enseñó a mantener el orden. Es paciente, detallista y muy buena en lo que hace. Volveré a contratarla.
+                    </p>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="enviar-resena">
+                    <h3 class="titulo-resena">Deja tu reseña</h3>
+
+                    <div class="form-group">
+                        <label>Tu calificación</label>
+                        <div class="estrellas-seleccion">
+                            <span class="estrella" data-valor="1">☆</span>
+                            <span class="estrella" data-valor="2">☆</span>
+                            <span class="estrella" data-valor="3">☆</span>
+                            <span class="estrella" data-valor="4">☆</span>
+                            <span class="estrella" data-valor="5">☆</span>
+                        </div>
+                        <input type="hidden" id="calificacion-usuario" name="calificacion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="texto-resena">Tu comentario</label>
+                        <textarea class="form-control" id="texto-resena" rows="4"
+                            placeholder="Comparte tu experiencia con este proveedor..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="enviarResena()">Enviar reseña</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./z_proveedor.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.8/dist/notiflix-aio-3.2.8.min.js"></script>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h3>Quienes somos</h3>
+                    <p>En Hand conectamos a las personas con proveedores confiables de servicios del hogar. Nuestra
+                        plataforma facilita encontrar ayuda rápida y segura en tareas como aseo, jardinería y plomería,
+                        ofreciendo una experiencia sencilla, moderna y cercana.</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>Informacion legal</h3>
+                    <div class="mislinks"><a href="./politicas_privacidad.html">Politicas de privacidad</a></div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>Horarios proveedores</h3>
+                    <div class="horarios"> Lunes 8:00am-6:00pm</div>
+                    <div class="horarios"> Martes 8:00am-6:00pm</div>
+                    <div class="horarios"> Miercoles 8:00am-6:00pm</div>
+                    <div class="horarios"> Jueves 8:00am-6:00pm</div>
+                    <div class="horarios"> Viernes 8:00am-6:00pm</div>
+                    <div class="horarios"> Sabado 10:00am-2:00pm</div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3>Menu</h3>
+                    <div class="mislinks"><a href="./index.html">Inicio</a></div>
+                    <div class="mislinks"><a href="./mision.html">Misión</a></div>
+                    <div class="mislinks"><a href="./vision.html">Visión</a></div>
+                    <div class="mislinks"><a href="./contactenos.html">Contactenos</a></div>
+                    <div class="mislinks"><a href="./jardineria.html">Jardinería</a></div>
+                    <div class="mislinks"><a href="./aseo.html">Aseo</a></div>
+                    <div class="mislinks"><a href="./plomeria.html">Plomeria</a></div>
+                    <div class="mislinks"><a href="./iniciosesion.html">Iniciar sesion</a></div>
+                    <div class="mislinks"><a href="./registrate.html">Registrarse</a></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p id="derechos_reservados">© 2025 Hand. Todos los derechos reservados. Hecho por: Jose Tomas Diaz Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

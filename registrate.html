@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./z_style.css">
+    <link rel="stylesheet" href="./registrate.css">
+    <title>HAND | Registrate</title>
+</head>
+
+<body>
+
+    <header id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                Hand
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">
+                            Inicio <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Acerca de nosotros
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./mision.html">Misión</a>
+                            <a class="dropdown-item" href="./vision.html">Visión</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="./contactenos.html">Contactenos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
+                            Servicios
+                        </a>
+
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./jardineria.html">Jardinería</a>
+                            <a class="dropdown-item" href="./aseo.html">Aseo</a>
+                            <a class="dropdown-item" href="./plomeria.html">Plomería</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./iniciosesion.html">Inicia sesión</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registrate.html">Registrate</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row" id="registro">
+            <div class="col-12">
+                <h2>Regístrate</h2>
+                <p>Completa el formulario para crear tu cuenta en Hand</p>
+
+                <form>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" placeholder="Ingresa tu apellido"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" class="form-control" id="correo" placeholder="correo@ejemplo.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="contrasena">Contraseña</label>
+                                <input type="password" class="form-control" id="contrasena"
+                                    placeholder="Ingresa tu contraseña" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="departamento">Departamento</label>
+                                <input type="text" class="form-control" id="departamento" list="listaDepartamentos"
+                                    placeholder="Escribe o selecciona tu departamento" required>
+                                <datalist id="listaDepartamentos">
+                                    <option value="Amazonas">
+                                    <option value="Antioquia">
+                                    <option value="Arauca">
+                                    <option value="Atlántico">
+                                    <option value="Bogotá D.C.">
+                                    <option value="Bolívar">
+                                    <option value="Boyacá">
+                                    <option value="Caldas">
+                                    <option value="Caquetá">
+                                    <option value="Casanare">
+                                    <option value="Cauca">
+                                    <option value="Cesar">
+                                    <option value="Chocó">
+                                    <option value="Córdoba">
+                                    <option value="Cundinamarca">
+                                    <option value="Guainía">
+                                    <option value="Guaviare">
+                                    <option value="Huila">
+                                    <option value="La Guajira">
+                                    <option value="Magdalena">
+                                    <option value="Meta">
+                                    <option value="Nariño">
+                                    <option value="Norte de Santander">
+                                    <option value="Putumayo">
+                                    <option value="Quindío">
+                                    <option value="Risaralda">
+                                    <option value="San Andrés y Providencia">
+                                    <option value="Santander">
+                                    <option value="Sucre">
+                                    <option value="Tolima">
+                                    <option value="Valle del Cauca">
+                                    <option value="Vaupés">
+                                    <option value="Vichada">
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-group">
+                                <label for="ciudad">Ciudad</label>
+                                <input type="text" class="form-control" id="ciudad" list="listaCiudades"
+                                    placeholder="Escribe o selecciona tu ciudad" required>
+                                <datalist id="listaCiudades">
+                                    <!-- Amazonas -->
+                                    <option value="Leticia">
+                                        <!-- Antioquia -->
+                                    <option value="Medellín">
+                                    <option value="Bello">
+                                    <option value="Itagüí">
+                                    <option value="Envigado">
+                                    <option value="Apartadó">
+                                    <option value="Turbo">
+                                    <option value="Rionegro">
+                                    <option value="Sabaneta">
+                                        <!-- Arauca -->
+                                    <option value="Arauca">
+                                        <!-- Atlántico -->
+                                    <option value="Barranquilla">
+                                    <option value="Soledad">
+                                    <option value="Malambo">
+                                    <option value="Sabanalarga">
+                                        <!-- Bogotá D.C. -->
+                                    <option value="Bogotá D.C.">
+                                        <!-- Bolívar -->
+                                    <option value="Cartagena">
+                                    <option value="Magangué">
+                                    <option value="Turbaco">
+                                        <!-- Boyacá -->
+                                    <option value="Tunja">
+                                    <option value="Duitama">
+                                    <option value="Sogamoso">
+                                        <!-- Caldas -->
+                                    <option value="Manizales">
+                                    <option value="La Dorada">
+                                    <option value="Chinchiná">
+                                        <!-- Caquetá -->
+                                    <option value="Florencia">
+                                    <option value="San Vicente del Caguán">
+                                        <!-- Casanare -->
+                                    <option value="Yopal">
+                                    <option value="Aguazul">
+                                        <!-- Cauca -->
+                                    <option value="Popayán">
+                                    <option value="Santander de Quilichao">
+                                        <!-- Cesar -->
+                                    <option value="Valledupar">
+                                    <option value="Aguachica">
+                                        <!-- Chocó -->
+                                    <option value="Quibdó">
+                                        <!-- Córdoba -->
+                                    <option value="Montería">
+                                    <option value="Cereté">
+                                    <option value="Lorica">
+                                        <!-- Cundinamarca -->
+                                    <option value="Soacha">
+                                    <option value="Fusagasugá">
+                                    <option value="Facatativá">
+                                    <option value="Zipaquirá">
+                                    <option value="Chía">
+                                    <option value="Mosquera">
+                                    <option value="Girardot">
+                                    <option value="Madrid">
+                                        <!-- Guainía -->
+                                    <option value="Inírida">
+                                        <!-- Guaviare -->
+                                    <option value="San José del Guaviare">
+                                        <!-- Huila -->
+                                    <option value="Neiva">
+                                    <option value="Pitalito">
+                                    <option value="Garzón">
+                                        <!-- La Guajira -->
+                                    <option value="Riohacha">
+                                    <option value="Maicao">
+                                        <!-- Magdalena -->
+                                    <option value="Santa Marta">
+                                    <option value="Ciénaga">
+                                    <option value="Fundación">
+                                        <!-- Meta -->
+                                    <option value="Villavicencio">
+                                    <option value="Acacías">
+                                    <option value="Granada">
+                                        <!-- Nariño -->
+                                    <option value="Pasto">
+                                    <option value="Tumaco">
+                                    <option value="Ipiales">
+                                        <!-- Norte de Santander -->
+                                    <option value="Cúcuta">
+                                    <option value="Ocaña">
+                                    <option value="Villa del Rosario">
+                                        <!-- Putumayo -->
+                                    <option value="Mocoa">
+                                    <option value="Puerto Asís">
+                                        <!-- Quindío -->
+                                    <option value="Armenia">
+                                    <option value="Calarcá">
+                                    <option value="Montenegro">
+                                        <!-- Risaralda -->
+                                    <option value="Pereira">
+                                    <option value="Dosquebradas">
+                                    <option value="Santa Rosa de Cabal">
+                                        <!-- San Andrés y Providencia -->
+                                    <option value="San Andrés">
+                                        <!-- Santander -->
+                                    <option value="Bucaramanga">
+                                    <option value="Floridablanca">
+                                    <option value="Girón">
+                                    <option value="Piedecuesta">
+                                    <option value="Barrancabermeja">
+                                        <!-- Sucre -->
+                                    <option value="Sincelejo">
+                                    <option value="Corozal">
+                                        <!-- Tolima -->
+                                    <option value="Ibagué">
+                                    <option value="Espinal">
+                                    <option value="Melgar">
+                                        <!-- Valle del Cauca -->
+                                    <option value="Cali">
+                                    <option value="Palmira">
+                                    <option value="Buenaventura">
+                                    <option value="Tuluá">
+                                    <option value="Cartago">
+                                    <option value="Buga">
+                                    <option value="Jamundí">
+                                    <option value="Yumbo">
+                                        <!-- Vaupés -->
+                                    <option value="Mitú">
+                                        <!-- Vichada -->
+                                    <option value="Puerto Carreño">
+                                </datalist>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="direccion">Dirección</label>
+                        <input type="text" class="form-control" id="direccion"
+                            placeholder="Ingresa tu dirección completa" required>
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="terminos" required>
+                        <label class="form-check-label" for="terminos">
+                            Acepto las <a href="./politicas_privacidad.html">políticas de privacidad</a>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <h3>Quienes somos</h3>
+                    <p>En Hand conectamos a las personas con proveedores confiables de servicios del hogar. Nuestra
+                        plataforma facilita encontrar ayuda rápida y segura en tareas como aseo, jardinería y plomería,
+                        ofreciendo una experiencia sencilla, moderna y cercana.</p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>Informacion legal</h3>
+                    <div class="mislinks"><a href="./politicas_privacidad.html">Politicas de privacidad</a></div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h3>Horarios proveedores</h3>
+                    <div class="horarios"> Lunes 8:00am-6:00pm</div>
+                    <div class="horarios"> Martes 8:00am-6:00pm</div>
+                    <div class="horarios"> Miercoles 8:00am-6:00pm</div>
+                    <div class="horarios"> Jueves 8:00am-6:00pm</div>
+                    <div class="horarios"> Viernes 8:00am-6:00pm</div>
+                    <div class="horarios"> Sabado 10:00am-2:00pm</div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h3>Menu</h3>
+                    <div class="mislinks"><a href="./index.html">Inicio</a></div>
+                    <div class="mislinks"><a href="./mision.html">Misión</a></div>
+                    <div class="mislinks"><a href="./vision.html">Visión</a></div>
+                    <div class="mislinks"><a href="./contactenos.html">Contactenos</a></div>
+                    <div class="mislinks"><a href="./jardineria.html">Jardinería</a></div>
+                    <div class="mislinks"><a href="./aseo.html">Aseo</a></div>
+                    <div class="mislinks"><a href="./plomeria.html">Plomeria</a></div>
+                    <div class="mislinks"><a href="./iniciosesion.html">Iniciar sesion</a></div>
+                    <div class="mislinks"><a href="./registrate.html">Registrarse</a></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p id="derechos_reservados">© 2025 Hand. Todos los derechos reservados. Hecho por: Jose Tomas Diaz Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

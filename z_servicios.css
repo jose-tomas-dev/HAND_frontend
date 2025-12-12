@@ -1,0 +1,116 @@
+#texto {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+#texto h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 15px;
+    text-align: center;
+}
+#texto p {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin-bottom: 0;
+}
+#proveedores {
+    margin-bottom: 60px;
+}
+#proveedores .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+#proveedores .card {
+    background: var(--fondo-blanco);
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    height: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    min-height: 450px; /* Altura mínima fija para todas las cards */
+    position: relative;
+}
+#proveedores .card:hover {
+    border-color: var(--primario);
+}
+#proveedores .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+#proveedores .card-body {
+    padding: 20px;
+    position: relative;
+    height: calc(100% - 250px); /* Resta la altura de la imagen */
+}
+#proveedores .card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--texto-primario);
+    margin-bottom: 12px;
+}
+#proveedores .card-text {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+}
+#proveedores .calificacion {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+#proveedores .calificacion span:first-child {
+    font-size: 16px;
+}
+#proveedores .puntuacion {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    #texto {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    #texto h2 {
+        font-size: 28px;
+    }
+    #texto p {
+        font-size: 16px;
+    }
+    #proveedores {
+        margin-bottom: 40px;
+    }
+    #proveedores .card {
+        min-height: 380px; /* Altura mínima ajustada para móvil */
+    }
+    #proveedores .card-img-top {
+        height: 180px;
+        object-fit: cover;
+        object-position: center top;
+    }
+    #proveedores .card-body {
+        padding: 15px;
+        height: calc(100% - 180px);
+    }
+    #proveedores .card-title {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    #proveedores .card-text {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+    #proveedores .calificacion {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+    }
+}

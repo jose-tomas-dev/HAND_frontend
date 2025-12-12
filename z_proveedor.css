@@ -1,0 +1,371 @@
+#detalle-proveedor {
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#info-principal {
+    margin-bottom: 50px;
+}
+
+#foto-proveedor {
+    margin-bottom: 30px;
+}
+
+.img-proveedor {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+    border: 2px solid #DEE2E6;
+}
+
+#datos-proveedor {
+    padding: 20px;
+}
+
+.nombre-proveedor {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 20px;
+}
+
+.especialidad {
+    padding-left: 1px;
+    font-size: 16px;
+    color: var(--texto-secundario);
+    text-align: left;
+}
+
+.calificacion-principal {
+    margin-bottom: 20px;
+}
+
+.estrellas {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.puntuacion {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-right: 10px;
+}
+
+.total-resenas {
+    font-size: 16px;
+    color: var(--texto-secundario);
+}
+
+.precio-contenedor {
+    margin-bottom: 25px;
+}
+
+.precio {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--texto-primario);
+}
+
+.por-hora {
+    font-size: 18px;
+    color: var(--texto-secundario);
+}
+
+.btn-reservar {
+    background-color: var(--primario);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.btn-reservar:hover {
+    background-color: var(--primario-oscuro);
+}
+
+#descripcion-completa {
+    margin-bottom: 50px;
+}
+
+.titulo-seccion {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--primario);
+    padding-bottom: 10px;
+}
+
+.texto-descripcion {
+    font-size: 16px;
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+}
+
+#servicios-ofrecidos {
+    margin-bottom: 50px;
+}
+
+.lista-servicios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-servicios li {
+    font-size: 16px;
+    color: var(--texto-secundario);
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+#comentarios-usuarios {
+    margin-bottom: 50px;
+}
+
+.comentario-card {
+    background: var(--fondo-blanco);
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 180px;
+}
+
+.comentario-header {
+    margin-bottom: 15px;
+}
+
+.usuario-info {
+    margin-bottom: 8px;
+}
+
+.nombre-usuario {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--texto-primario);
+    margin-right: 10px;
+}
+
+.fecha-comentario {
+    font-size: 14px;
+    color: var(--texto-secundario);
+}
+
+.calificacion-comentario {
+    font-size: 16px;
+}
+
+.texto-comentario {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    margin: 0;
+}
+
+.enviar-resena {
+    background: var(--fondo-blanco);
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.titulo-resena {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.enviar-resena .form-group {
+    margin-bottom: 20px;
+}
+
+.enviar-resena label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--texto-primario);
+    margin-bottom: 8px;
+}
+
+.enviar-resena .form-control {
+    border: 2px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--texto-primario);
+}
+
+.estrellas-seleccion {
+    margin-top: 10px;
+}
+
+.estrella {
+    font-size: 40px;
+    color: #DEE2E6;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.estrella:hover,
+.estrella.activa {
+    color: #FFD700;
+}
+
+.enviar-resena select.form-control {
+    height: 48px;
+}
+
+.enviar-resena select.form-control option {
+    background: var(--fondo-blanco);
+    color: var(--texto-primario);
+}
+
+.enviar-resena textarea.form-control {
+    resize: vertical;
+}
+
+.enviar-resena .form-control:focus {
+    border-color: var(--primario);
+    outline: none;
+}
+
+.enviar-resena .btn-primary {
+    background: var(--primario);
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: var(--texto-blanco);
+}
+
+.enviar-resena .btn-primary:hover {
+    background: var(--primario-oscuro);
+}
+
+@media (max-width: 768px) {
+    #detalle-proveedor {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #foto-proveedor {
+        margin-bottom: 20px;
+    }
+
+    .img-proveedor {
+        height: 450px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    #datos-proveedor {
+        padding: 0;
+    }
+
+    .nombre-proveedor {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .estrellas {
+        font-size: 18px;
+    }
+
+    .puntuacion {
+        font-size: 20px;
+    }
+
+    .total-resenas {
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 28px;
+    }
+
+    .por-hora {
+        font-size: 16px;
+    }
+
+    .btn-reservar {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+
+    .titulo-seccion {
+        font-size: 24px;
+    }
+
+    .texto-descripcion {
+        font-size: 15px;
+    }
+
+    .lista-servicios li {
+        font-size: 15px;
+    }
+
+    .comentario-card {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .nombre-usuario {
+        font-size: 16px;
+    }
+
+    .texto-comentario {
+        font-size: 14px;
+    }
+
+    .enviar-resena {
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+
+    .titulo-resena {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .enviar-resena .btn-primary {
+        height: 48px;
+    }
+
+    button.btn-reservar {
+        margin: 20px;
+        display: block;
+        width: 90%;
+    }
+
+    h1.nombre-proveedor {
+        padding-left: 18px;
+    }
+
+    span.estrellas {
+        padding-left: 18px;
+    }
+
+    span.precio {
+        padding-left: 18px;
+    }
+    .especialidad {
+        padding-left: 18px;
+    }
+}

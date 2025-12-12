@@ -1,0 +1,123 @@
+#registro {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--fondo-blanco);
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-top: 25px;
+}
+
+#registro h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#registro p {
+    font-size: 16px;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#registro .form-group {
+    margin-bottom: 25px;
+}
+
+#registro label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--texto-primario);
+    margin-bottom: 8px;
+}
+
+#registro .form-control {
+    height: 48px;
+    border: 2px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--texto-primario);
+}
+
+#registro .form-control:focus {
+    border-color: var(--primario);
+    outline: none;
+}
+
+#registro .form-check {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#registro .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+#registro .form-check-label {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    margin-left: 8px;
+}
+
+#registro .form-check-label a {
+    color: var(--primario);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#registro .form-check-label a:hover {
+    color: var(--primario-oscuro);
+    text-decoration: underline;
+}
+
+#registro .btn-primary {
+    background: var(--primario);
+    border: none;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: var(--texto-blanco);
+}
+
+#registro .btn-primary:hover {
+    background: var(--primario-oscuro);
+}
+/* Personalizar las flechas de los inputs con datalist */
+#departamento,
+#ciudad {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%230066FF' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+#departamento::-webkit-calendar-picker-indicator,
+#ciudad::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    #registro {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    
+    #registro h2 {
+        font-size: 28px;
+    }
+    
+    #registro .form-control {
+        height: 45px;
+    }
+    
+    #registro .btn-primary {
+        height: 48px;
+    }
+}

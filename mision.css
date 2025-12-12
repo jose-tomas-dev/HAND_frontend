@@ -1,0 +1,85 @@
+#mision {
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+#mision h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 4px solid var(--primario);
+}
+
+#mision p {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#cards-valores {
+    margin-bottom: 60px;
+}
+
+#cards-valores .card {
+    background: var(--fondo-blanco);
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+#cards-valores .card-body {
+    padding: 25px;
+}
+
+#cards-valores .card-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#cards-valores .card-text {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #mision {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    #mision h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    
+    #mision p {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    #cards-valores {
+        margin-bottom: 40px;
+    }
+    
+    #cards-valores .card-body {
+        padding: 20px;
+    }
+    
+    #cards-valores .card-title {
+        font-size: 16px;
+    }
+    
+    #cards-valores .card-text {
+        font-size: 14px;
+    }
+}

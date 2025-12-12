@@ -1,0 +1,263 @@
+:root {
+    /* Colores principales */
+    --primario: #0066FF;
+    --primario-oscuro: #0052CC;
+    --primario-claro: #3385FF;
+    --secundario: #00C853;
+    --terciario: #FF6B35;
+    
+    /* Fondos */
+    --fondo-principal: #F8F9FA;
+    --fondo-blanco: #FFFFFF;
+    --fondo-oscuro: #1A1D29;
+    
+    /* Textos */
+    --texto-primario: #1A1D29;
+    --texto-secundario: #6C757D;
+    --texto-blanco: #FFFFFF;
+}
+
+/* === fuete de google === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: #ededed;
+    color: var(--texto-primario);
+}
+
+
+#navbar {
+    position: sticky;
+    top: 0;
+    /* z-index hace que el menu , los desplegables simepre esten por encima de todo */
+    z-index: 1000;
+    background: var(--fondo-blanco);
+}
+
+#navbar .navbar {
+    background: var(--fondo-blanco) !important;
+    padding: 16px 0;
+}
+
+#navbar .navbar-brand {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--primario);
+    
+}
+
+#navbar .navbar-brand:hover {
+    color: var(--primario-oscuro);
+}
+
+#navbar .navbar-brand img {
+    border-radius: 10px;
+}
+
+#navbar .nav-link {
+    color: var(--texto-primario);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 18px !important;
+    margin: 0 4px;
+    border-radius: 8px;
+}
+
+#navbar .nav-link:hover {
+    color: var(--primario);
+    background: rgba(0, 102, 255, 0.08);
+}
+
+#navbar .nav-item.active .nav-link {
+    color: var(--primario);
+    background: rgba(0, 102, 255, 0.12);
+}
+
+#navbar .dropdown-menu {
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 8px;
+    
+}
+
+#navbar .dropdown-item {
+    padding: 12px 18px;
+    border-radius: 8px;
+    color: var(--texto-primario);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#navbar .dropdown-item:hover {
+    background: var(--primario);
+    color: var(--texto-blanco);
+}
+
+#navbar .dropdown-divider {
+    margin: 10px 0;
+}
+
+/* Botones especiales en navbar */
+#navbar .navbar-nav.ml-auto .nav-item:first-child .nav-link {
+    color: var(--primario);
+    border: 2px solid var(--primario);
+    padding: 10px 28px !important;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+#navbar .navbar-nav.ml-auto .nav-item:first-child .nav-link:hover {
+    background: var(--primario);
+    color: var(--texto-blanco);
+}
+
+#navbar .navbar-nav.ml-auto .nav-item:last-child .nav-link {
+    background: var(--primario);
+    color: var(--texto-blanco);
+    padding: 10px 28px !important;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+#navbar .navbar-nav.ml-auto .nav-item:last-child .nav-link:hover {
+    background: var(--primario-oscuro);
+}
+
+/* === FOOTER === */
+footer {
+    background: linear-gradient(180deg, var(--fondo-oscuro) 0%, #0F1117 100%);
+    color: var(--texto-blanco);
+    padding: 60px 0 30px;
+    margin-top: 80px;
+    position: relative;
+}
+
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--texto-blanco);
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+
+footer p {
+    color: #B0B5C0;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+footer .mislinks {
+    margin-bottom: 12px;
+}
+
+footer .mislinks a {
+    color: #B0B5C0;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+footer .mislinks a::before {
+    /* eso es para poner la flecha antes  */
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--primario);
+    font-weight: bold;
+}
+
+footer .mislinks a:hover {
+    color: var(--texto-blanco);
+}
+
+footer .horarios {
+    color: #B0B5C0;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 500;
+}
+
+footer .horarios::before {
+    content: ''; /* 1. Crea el elemento (vacío) */
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    /* cuadrado de 6x6 */
+    background: var(--secundario);
+    border-radius: 50%;
+    /* lo vuelve redondo  */
+}
+
+p#derechos_reservados {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #B0B5C0;
+    margin-bottom: 0;
+}
+
+.container {
+    position: relative;
+}
+
+@media (max-width: 991px) {
+    #navbar .navbar-nav {
+        padding: 16px 0;
+    }
+    
+    #navbar .nav-link {
+        margin: 4px 0;
+    }
+    
+    #navbar .navbar-nav.ml-auto {
+        margin-top: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    #navbar .navbar-nav.ml-auto .nav-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    #navbar .navbar-nav.ml-auto .nav-link {
+        display: inline-block;
+        width: 80%;
+    }
+    
+    footer .col-12 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar .navbar-brand {
+        font-size: 22px;
+    }
+    
+    footer {
+        padding: 40px 0 20px;
+    }
+    
+    footer h3 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}

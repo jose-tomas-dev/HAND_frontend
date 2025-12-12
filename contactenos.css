@@ -1,0 +1,144 @@
+#contactenos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#titulo-contacto {
+    padding-bottom: 40px;
+}
+
+#titulo-contacto h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#titulo-contacto p {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#redes-sociales {
+    margin-bottom: 40px;
+}
+
+.contacto-card {
+    background: var(--fondo-blanco);
+    border: 2px solid #DEE2E6;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.icono-red {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.titulo-red {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--texto-primario);
+    margin-bottom: 15px;
+}
+
+.info-contacto {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    margin-bottom: 25px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.icono-boton {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1da851;
+    color: white;
+}
+
+.btn-correo {
+    background-color: #EA4335;
+}
+
+.btn-correo:hover {
+    background-color: #c23321;
+    color: white;
+}
+
+.btn-instagram {
+    background-color: #E4405F;
+}
+
+.btn-instagram:hover {
+    background-color: #c13584;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #contactenos {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #titulo-contacto {
+        padding-bottom: 30px;
+    }
+
+    #titulo-contacto h2 {
+        font-size: 28px;
+    }
+
+    #titulo-contacto p {
+        font-size: 16px;
+    }
+
+    .contacto-card {
+        padding: 25px;
+        min-height: auto;
+    }
+
+    .icono-red {
+        width: 60px;
+        height: 60px;
+    }
+
+    .titulo-red {
+        font-size: 20px;
+    }
+
+    .info-contacto {
+        font-size: 16px;
+    }
+
+    .btn-contacto {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+}
