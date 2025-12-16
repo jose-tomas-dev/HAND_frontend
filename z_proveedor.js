@@ -37,11 +37,6 @@ function actualizarEstrellas(cantidad) {
 }
 
 
-function reservarCita() {
-    Notiflix.Notify.success('¡Perfecto! Tienes una cita reservada. Te contactaremos pronto.');
-    
-}
-
 function enviarResena() {
     Notiflix.Notify.success('Gracias por compartirnos tu experiencia :)');
 }

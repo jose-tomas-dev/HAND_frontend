@@ -1,0 +1,93 @@
+#reserva-cita {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--fondo-blanco);
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#reserva-cita h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primario);
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#reserva-cita p {
+    font-size: 16px;
+    color: var(--texto-secundario);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#reserva-cita .form-group {
+    margin-bottom: 25px;
+}
+
+#reserva-cita label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--texto-primario);
+    margin-bottom: 8px;
+}
+
+#reserva-cita .form-control {
+    height: 48px;
+    border: 2px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: var(--texto-primario);
+}
+
+#reserva-cita textarea.form-control {
+    height: auto;
+    resize: vertical;
+}
+
+#reserva-cita .form-control:focus {
+    border-color: var(--primario);
+    outline: none;
+}
+
+#reserva-cita .btn-primary {
+    background: var(--primario);
+    border: none;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    color: var(--texto-blanco);
+}
+
+#reserva-cita .btn-primary:hover {
+    background: var(--primario-oscuro);
+}
+
+@media (max-width: 767px) {
+    #reserva-cita {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #reserva-cita h2 {
+        font-size: 28px;
+    }
+    
+    #reserva-cita p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+    
+    #reserva-cita .form-control {
+        height: 45px;
+    }
+    
+    #reserva-cita .btn-primary {
+        height: 48px;
+    }
+}
