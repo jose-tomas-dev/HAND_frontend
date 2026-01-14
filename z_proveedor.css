@@ -1,3 +1,45 @@
+/* Botón de volver en el header */
+.btn-volver-header {
+    display: none; /* Oculto por defecto (desktop) */
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+    /* Mostrar botón volver en móvil */
+    .btn-volver-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primario);
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .btn-volver-header:hover {
+        background-color: var(--primario);
+        transform: scale(1.05);
+        color: white;
+        text-decoration: none;
+    }
+    
+    .btn-volver-header svg {
+        width: 22px;
+        height: 22px;
+    }
+    
+    /* Ocultar logo en móvil */
+    .navbar-brand.logo-desktop {
+        display: none;
+    }
+}
+
 #detalle-proveedor {
     padding-top: 40px;
     padding-bottom: 60px;
