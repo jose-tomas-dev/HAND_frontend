@@ -261,3 +261,46 @@ p#derechos_reservados {
         margin-bottom: 20px;
     }
 }
+/* === BREADCRUMB === */
+.breadcrumb-container {
+    background: #ededed;
+    padding: 16px 0;
+    margin-bottom: 0;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.breadcrumb-item {
+    font-weight: 500;
+}
+
+.breadcrumb-item a {
+    color: var(--primario);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.breadcrumb-item a:hover {
+    color: var(--primario-oscuro);
+    text-decoration: underline;  /* Inicio SÍ se subraya al pasar el mouse */
+}
+
+/* Cuando haces hover en un enlace, quita el subrayado del active */
+.breadcrumb:has(a:hover) .breadcrumb-item.active {
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: var(--texto-primario);
+    font-weight: 700;
+    text-decoration: underline;  /* Políticas de Privacidad subrayado por defecto */
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--texto-secundario);
+}
