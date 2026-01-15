@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <!-- Font Awesome para el escudo azul -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="icon" type="image/png" href="./assets/logo.png"/>
 
     <link rel="stylesheet" href="./z_style.css">
@@ -85,21 +88,30 @@
 
     <div class="container">
         <div class="row" id="principal_info">
-            <div class="col-12 col-md-6">
-                <img src="./assets/logo.png" width="100%">
+            
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <h1>Servicios del hogar con profesionales calificados</h1>
+                <p>Jardinería, aseo y plomería. Encuentra expertos verificados y calificados por clientes reales en Colombia.</p>
+                
+                <div class="hero-buttons">
+                    <a href="./buscar_servicios.html" class="btn btn-primary-custom">Buscar Servicios</a>
+                    <a href="./contactenos.html" class="btn btn-secondary-custom">Contáctanos</a>
+                </div>
+
+                <div class="hero-badges">
+                    <div class="badge-item">
+                        <i class="fas fa-shield-alt badge-icon" style="color: #0066FF;"></i>
+                        <span class="badge-text">100% Verificados</span>
+                    </div>
+                    <div class="badge-item">
+                        <span class="badge-icon">⭐</span>
+                        <span class="badge-text">+5000 Reseñas</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <h1>¿Qué es Hand?</h1>
-                <h4>¿Necesitas algun servicio?</h4>
-                <p>Hand es una plataforma digital diseñada para conectar a personas que necesitan apoyo en su hogar con
-                    proveedores de servicios confiables y verificados. Nuestro propósito es hacer que la contratación de
-                    ayuda sea un proceso sencillo, seguro y accesible para cualquier usuario.
-                    En Hand, los proveedores cuentan con perfiles detallados, calificaciones y experiencias que permiten
-                    a los usuarios tomar decisiones informadas. Con solo unos clics, la plataforma facilita solicitar
-                    servicios, gestionar reservas y recibir asistencia cuando más se necesita.
-                    Hand surge como una solución moderna que busca mejorar la calidad de vida de las personas,
-                    ofreciendo una experiencia rápida, clara y centrada en la confianza entre usuarios y proveedores.
-                </p>
+
+            <div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                <img src="./assets/que_es_hand.png" class="hero-image">
             </div>
         </div>
         
