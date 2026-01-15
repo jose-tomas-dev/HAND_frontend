@@ -124,65 +124,60 @@ div#titulo-proovedores {
     padding-top: 52px;
 }
 
+/* ===== ESTILOS PARA CATEGORÍAS CON CARDS ===== */
 #categorias {
     margin-bottom: 80px;
 }
 
-#categorias .item_equipo {
-    background: var(--fondo-principal);
+.categoria-card-link {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+
+.categoria-card-link:hover {
+    text-decoration: none !important;
+}
+
+.categoria-card {
+    background: var(--fondo-blanco);
     border-radius: 15px;
-    padding: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 3px solid transparent;
     margin-bottom: 30px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categoria-card:hover {
+    border-color: #0066FF;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
+}
+
+.categoria-img-wrapper {
+    width: 100%;
+    height: 300px;
     overflow: hidden;
 }
 
-#categorias .item_equipo img {
+.categoria-img-wrapper img {
     width: 100%;
-    height: 410px; 
-    object-fit: cover;  
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* Flechas del carrusel */
-#carouselCategorias .carousel-control-prev-icon,
-#carouselCategorias .carousel-control-next-icon {
-    background-color: var(--primario);
-    border-radius: 50%;
-    padding: 20px;
+.categoria-card:hover .categoria-img-wrapper img {
+    transform: scale(1.05);
 }
 
-/* Indicadores (las tres barritas) */
-#carouselCategorias .carousel-indicators li {
-    background-color: var(--primario);
-    height: 10px;
-    border-radius: 5px;
+.categoria-content {
+    padding: 25px;
 }
 
-#carouselCategorias .carousel-indicators .active {
-    background-color: var(--primario-oscuro);
-}
-
-#categorias .item_equipo .lblnombre {
-    background: var(--primario);
-    color: var(--texto-blanco);
-    padding: 15px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-#categorias .item_equipo p {
-    padding: 20px;
-    font-size: 16px;
-    color: var(--texto-secundario);
-    text-align: center;
-    margin-bottom: 0;
-}
-
-#beneficios {
-    margin-bottom: 80px;
-}
-
-#beneficios h3 {
+.categoria-content h3 {
     font-size: 20px;
     font-weight: 700;
     color: var(--primario);
@@ -190,12 +185,68 @@ div#titulo-proovedores {
     text-align: center;
 }
 
-#beneficios p {
+.categoria-description {
     font-size: 16px;
     color: var(--texto-secundario);
     text-align: center;
+    margin-bottom: 0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
+.categoria-card:hover .categoria-description {
+    opacity: 1;
+    max-height: 100px;
+}
+
+/* ===== ESTILOS PARA CARRUSEL DE BENEFICIOS ===== */
+#beneficios {
+    margin-bottom: 80px;
+}
+
+.beneficio-item {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.beneficio-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primario);
+    margin-bottom: 20px;
+}
+
+.beneficio-item p {
+    font-size: 18px;
+    color: var(--texto-secundario);
+    max-width: 600px;
+}
+
+#carouselBeneficios .carousel-control-prev-icon,
+#carouselBeneficios .carousel-control-next-icon {
+    background-color: var(--primario);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#carouselBeneficios .carousel-indicators li {
+    background-color: var(--primario);
+    height: 10px;
+    border-radius: 5px;
+}
+
+#carouselBeneficios .carousel-indicators .active {
+    background-color: var(--primario-oscuro);
+}
+
+/* ===== ESTILOS PARA CÓMO FUNCIONA (GRID ORIGINAL) ===== */
 #funcionamiento {
     margin-bottom: 80px;
 }
@@ -276,28 +327,37 @@ div#titulo-proovedores {
         padding-bottom: 15px;
     }
 
-    #categorias .item_equipo img {
-        height: 260px;
+    /* Categorías responsive */
+    .categoria-img-wrapper {
+        height: 200px;
     }
 
-    #categorias .item_equipo .lblnombre {
-        font-size: 18px;
-        padding: 12px;
-    }
-
-    #categorias .item_equipo p {
-        font-size: 14px;
-        padding: 15px;
-    }
-
-    #beneficios h3 {
+    .categoria-content h3 {
         font-size: 18px;
     }
 
-    #beneficios p {
+    .categoria-description {
         font-size: 14px;
+        opacity: 1;
+        max-height: none;
     }
 
+    /* Beneficios responsive */
+    .beneficio-item {
+        padding: 40px 15px;
+        min-height: 200px;
+    }
+
+    .beneficio-item h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .beneficio-item p {
+        font-size: 16px;
+    }
+
+    /* Funcionamiento responsive */
     #funcionamiento h2 {
         text-align: center;
     }
