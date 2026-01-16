@@ -21,6 +21,9 @@ function buscarServicio(inputId) {
         'zonas verdes': './jardineria.html',
         'flor': './jardineria.html',
         'flores': './jardineria.html',
+        'jardinero': './jardineria.html',
+        'jardinera': './jardineria.html',
+
 
         // ASEO
         'aseo': './aseo.html',
@@ -50,7 +53,11 @@ function buscarServicio(inputId) {
         'desagüe': './plomeria.html',
         'desague': './plomeria.html',
         'instalación': './plomeria.html',
-        'instalacion': './plomeria.html'
+        'instalacion': './plomeria.html',
+        'bano': './plomeria.html',
+        'baño': './plomeria.html',
+
+
     };
     
     // Buscar coincidencia exacta o parcial
