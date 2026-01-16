@@ -19,17 +19,18 @@
     <header id="navbar">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-            <!-- Botón de volver (solo móvil) -->
-            <a href="javascript:history.back()" class="btn-volver-header" aria-label="Volver atrás">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-            </a>
-
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
                 Hand
             </a>
+
+            <!-- BUSCADOR MÓVIL - Visible solo en móvil, fuera de la hamburguesa -->
+            <div class="search-container search-mobile">
+                <input type="text" id="searchInputMobile" class="search-input" placeholder="Buscar...">
+                <button class="search-button" onclick="buscarServicio('searchInputMobile')">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,29 +54,27 @@
 
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="./mision.html">Misión</a>
-                            <a class="dropdown-item" href="./vision.html">Visión</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./contactenos.html">Contactenos</a>
+                            <a class="dropdown-item" href="./vision.html">Visión</a>    
                         </div>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown">
-                            Servicios
-                        </a>
-
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="./jardineria.html">Jardinería</a>
-                            <a class="dropdown-item" href="./aseo.html">Aseo</a>
-                            <a class="dropdown-item" href="./plomeria.html">Plomería</a>
-                        </div>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="./contactenos.html">Contactenos</a>
                     </li>
 
                 </ul>
 
+                <!-- BUSCADOR DESKTOP - Visible solo en desktop, entre Servicios e Inicia sesión -->
+                <div class="search-container search-desktop">
+                    <input type="text" id="searchInputDesktop" class="search-input" placeholder="Buscar servicio...">
+                    <button class="search-button" onclick="buscarServicio('searchInputDesktop')">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./iniciosesion.html">Inicia sesión</a>
+                        <a class="nav-link" href="./iniciosesion.html">Inicia sesión </a>
                     </li>
 
                     <li class="nav-item">
