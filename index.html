@@ -29,6 +29,14 @@
                 Hand
             </a>
 
+            <!-- BUSCADOR MÓVIL - Visible solo en móvil, fuera de la hamburguesa -->
+            <div class="search-container search-mobile">
+                <input type="text" id="searchInputMobile" class="search-input" placeholder="Buscar...">
+                <button class="search-button" onclick="buscarServicio('searchInputMobile')">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -70,6 +78,14 @@
                     </li>
 
                 </ul>
+
+                <!-- BUSCADOR DESKTOP - Visible solo en desktop, entre Servicios e Inicia sesión -->
+                <div class="search-container search-desktop">
+                    <input type="text" id="searchInputDesktop" class="search-input" placeholder="Buscar servicio...">
+                    <button class="search-button" onclick="buscarServicio('searchInputDesktop')">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -378,6 +394,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
+
+    
+    <script src="./index.js"></script>
 
     <script>
         $(document).ready(function(){
