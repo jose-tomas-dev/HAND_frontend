@@ -19,7 +19,9 @@ function buscarServicio(inputId) {
         'paisajismo': './jardineria.html',
         'verde': './jardineria.html',
         'zonas verdes': './jardineria.html',
-        
+        'flor': './jardineria.html',
+        'flores': './jardineria.html',
+
         // ASEO
         'aseo': './aseo.html',
         'limpieza': './aseo.html',
@@ -41,6 +43,7 @@ function buscarServicio(inputId) {
         'fuga': './plomeria.html',
         'agua': './plomeria.html',
         'tubos': './plomeria.html',
+        'tubo': './plomeria.html',
         'caño': './plomeria.html',
         'cano': './plomeria.html',
         'destape': './plomeria.html',
